@@ -1,1 +1,66 @@
-<html>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пример Grid-сетки</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 колонки одинаковой ширины */
+            grid-gap: 20px; /* Расстояние между ячейками */
+            padding: 20px;
+            max-width: 960px; /* Максимальная ширина контейнера */
+            margin: 0 auto; /* Центрирование контейнера по горизонтали */
+        }
+
+        .grid-item {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .grid-item h2 {
+          margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <h2>Продукт 1</h2>
+            <p>Описание продукта 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button>Подробнее</button>
+        </div>
+        <div class="grid-item">
+            <h2>Продукт 2</h2>
+            <p>Описание продукта 2. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button>Подробнее</button>
+        </div>
+        <div class="grid-item">
+            <h2>Продукт 3</h2>
+            <p>Описание продукта 3. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            <button>Подробнее</button>
+        </div>
+        <div class="grid-item">
+            <h2>Продукт 4</h2>
+            <p>Описание продукта 4. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <button>Подробнее</button>
+        </div>
+        <div class="grid-item">
+            <h2>Продукт 5</h2>
+            <p>Описание продукта 5. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button>Подробнее</button>
+        </div>
+        <div class="grid-item">
+          <h2>Продукт 6</h2>
+          <p>Описание продукта 6. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget quam sit amet enim vulputate mollis.</p>
+          <button>Подробнее</button>
+        </div>
+    </div>
+
+</body>
+</html>
